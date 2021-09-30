@@ -8,7 +8,7 @@ Alternatively, there is also a Matlab implementation in `https://github.com/zgbk
 
 # Installation
 
-1. Git clone `https://github.com/zgbkdlm/tmefs`.
+1. Git clone this repository.
 2. Navigate to the cloned folder.
 3. Open a terminal and run `python setup.py install` or `python setup.py develop` in your favourite python environment.
 
