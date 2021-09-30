@@ -1,5 +1,7 @@
 # Gaussian filter and smoother with Taylor moment expansion in Python (Jax)
 
+[![Unittests](https://github.com/zgbkdlm/tmefs/actions/workflows/tests.yml/badge.svg)](https://github.com/zgbkdlm/tmefs/actions/workflows/tests.yml)
+
 In this repository, you can find a Python (Jax) implementation of the TME Gaussian filter and smoother for non-linear continuous-discrete filtering and smoothing problems. 
 
 Alternatively, there is also a Matlab implementation in `https://github.com/zgbkdlm/tme/tree/main/matlab`.
