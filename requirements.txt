@@ -1,0 +1,6 @@
+jax
+jaxlib
+tme
+numpy
+scipy
+
