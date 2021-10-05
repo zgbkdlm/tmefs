@@ -68,7 +68,15 @@ smoothing_results = tme_smoother(filtering_results[0], filtering_results[1])
 4. `./triton`: This folder contains the files that produce the numerical results in the manuscript. This is helpful if you wish to reproduce our results exactly. Note that the scripts are executed in the Triton computational cluster (a slurm-based cluster), Aalto University, but you can still run them in your computer with small modifications.
 
 # Citation
-to be added
+
+```bibtex
+@article{ZhaoZ2021TMEsmoother,
+	title={Non-linear {G}aussian smoothing with {T}aylor moment expansion},
+	author={Zhao, Zheng and S{\"a}rkk{\"a}, Simo},
+	journal={arXiv:2110.01396},
+	year={2021}
+}
+```
 
 # License
 GNU General Public License version 3 or later.
