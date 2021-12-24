@@ -73,7 +73,7 @@ smoothing_results = tme_smoother(filtering_results[0], filtering_results[1])
 @article{ZhaoZ2021TMEsmoother,
 	title={Non-linear {G}aussian smoothing with {T}aylor moment expansion},
 	author={Zhao, Zheng and S{\"a}rkk{\"a}, Simo},
-	journal={arXiv:2110.01396},
+	journal={IEEE Signal Processing Letters},
 	year={2021}
 }
 ```
