@@ -52,7 +52,7 @@ def tme_filter(ys):
 # Here is the smoother which takes filtering means `mfs` and covariances `Pfs` as input
 @jit
 def tme_smoother(mfs, Pfs):
-    return sgp_smoother(f_Q=discs[smoother_name], sgps=sgps, mfs=mfs, Pfs=Pfs,
+    return sgp_smoother(f_Q=tme_m_cov, sgps=sigma_points, mfs=mfs, Pfs=Pfs,
                         dt=dt)
 
 # Run
