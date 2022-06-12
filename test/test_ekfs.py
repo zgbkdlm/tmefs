@@ -23,7 +23,6 @@ dt = 1e-3
 a, b = 0.1, 0.1
 A = -a * jnp.eye(dim_x)
 B = b * jnp.eye(dim_x)
-Qw = 1. * jnp.eye(dim_x)
 
 # x_k = F x_{k-1} + Q
 F = math.exp(-a * dt) * jnp.eye(dim_x)

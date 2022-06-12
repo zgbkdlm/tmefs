@@ -25,7 +25,6 @@ dt = 0.01
 a, b = 1., 1.
 A = -a * jnp.eye(dim_x)
 B = b * jnp.eye(dim_x)
-Qw = 1. * jnp.eye(dim_x)
 
 # x_k = F x_{k-1} + Q
 F = math.exp(-a * dt) * jnp.eye(dim_x)
@@ -49,12 +48,12 @@ def dispersion(u):
 @jit
 def tme_m_cov(u, dt):
     return tme.mean_and_cov(x=u, dt=dt,
-                            a=drift, b=dispersion, Qw=Qw, order=3)
+                            drift=drift, dispersion=dispersion, order=3)
 
 
 @jit
 def em_m_cov(u, dt):
-    return u + drift(u) * dt, dispersion(u) @ Qw @ dispersion(u).T * dt
+    return u + drift(u) * dt, dispersion(u) @ dispersion(u).T * dt
 
 
 class TestFiltersSmoothers(unittest.TestCase):

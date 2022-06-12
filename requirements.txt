@@ -1,6 +1,5 @@
 jax
 jaxlib
-tme
+tme>=0.1.4
 numpy
 scipy
-

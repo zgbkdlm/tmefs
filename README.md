@@ -38,7 +38,7 @@ tme_order = 2
 @jit
 def tme_m_cov(x, dt):
     return tme.mean_and_cov(x=x, dt=dt,
-                            a=drift, b=dispersion, Qw=Qw, order=tme_order)
+                            drift=drift, dispersion=dispersion, order=tme_order)
 
 # Make sigma points (Gauss--Hermite)
 sigma_points = SigmaPoints.gauss_hermite(d=dim_of_state, order=3)
